@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="quest_style.css" rel="stylesheet">
+    <title>Quest</title>
+</head>
+
+<body>
+    <form class="form_body">
+        <header>
+            <h1 class="titeltext">Тест "Веселка"</h1>
+        </header>
+        <fieldset>
+            <legend> <label> 1. Скільки кольорів у веселці?</label></legend>
+            <p><input type="number" id="q1" name="q1"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>2. Вкажіть кольори веселки у правельному порядку?</label></legend>
+            <input type="color" id="q2_1" name="q2_1"><br>
+            <input type="color" id="q2_2" name="q2_2"><br>
+            <input type="color" id="q2_3" name="q2_3"><br>
+            <input type="color" id="q2_4" name="q2_4"><br>
+            <input type="color" id="q2_5" name="q2_5"><br>
+            <input type="color" id="q2_6" name="q2_6"><br>
+            <input type="color" id="q2_7" name="q2_7"><br>
+        </fieldset>
+        <fieldset>
+            <legend> <label>3. Запищіть, коли зявляється веселка?</label></legend>
+            <p><textarea name="q3" id="q3" maxlength="500" spellcheck="true" rows="5" cols="60"></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>4. Вам подобаються веселки?</label></legend>
+            <p><input type="radio" name="q4" id="q4_1"><label for="q4_1">Так, я олюблюю веселки</label></p>
+            <p><input type="radio" name="q4" id="q4_2"><label for="q4_2">Ні,мені вони не подобаються</label></p>
+            <p><input type="radio" name="q4" id="q4_3"><label for="q4_3">Мене вони не цікавлять</label></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>5. Коли в останне вы бачили веселку?</label></legend>
+            <p><input type="date" name="q5" id="q5"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>6. Вкажіть свій емейл</label></legend>
+            <p><input type="email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"
+                    id="email" required placeholder="Вкажіть свій email " title="Електронна пошта "></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>7. Які три основні кольори веселки?</label></legend>
+            <table>
+                <tr>
+                    <td>
+                        <p><input type="checkbox" name="q7" id="q7_1"><label for="q7_1">Червоний</label></p>
+                        <p><input type="checkbox" name="q7" id="q7_2"><label for="q7_2">Жарко-жовтий</label></p>
+                    </td>
+                    <td>
+                        <p><input type="checkbox" name="q7" id="q7_3"><label for="q7_3">Жовтий</label></p>
+                        <p><input type="checkbox" name="q7" id="q7_4"><label for="q7_4">Зелений</label></p>
+                    </td>
+                    <td>
+                        <p><input type="checkbox" name="q7" id="q7_5"><label for="q7_5">Голубий</label></p>
+                        <p><input type="checkbox" name="q7" id="q7_6"><label for="q7_6">Синій</label></p>
+                    </td>
+                    <td>
+                        <p><input type="checkbox" name="q7" id="q7_7"><label for="q7_7">Фіолетовий</label></p>
+                        <p><input type="checkbox" name="q7" id="q7_7"><label for="q7_8">Чорний</label></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend> <label>8. Можете потягнути полузка?</label></legend>
+            <p><input type="range" min="0" max="100" id="rng" name="rng"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label for="web_link">9. Наведіть ссилку на сайт з веселками?</label></legend>
+            <p><input type="url" id="web_link" name="web_link" pattern="https?://.+" placeholder="http://..."
+                    title="Повинен включати http://"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label for="time_v">10. В який час можна побачити веселку?</label></legend>
+            <p><input type="time" id="time_v" name="time_v"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label>11. В який частину дня можливо побачити веселку?</label></legend>
+            <p><input type="checkbox" name="q11" id="q11_1"><label for="q11_1">З ранку</label></p>
+            <p><input type="checkbox" name="q11" id="q11_2"><label for="q11_2">Днем</label></p>
+            <p><input type="checkbox" name="q11" id="q11_3"><label for="q11_3">В вечері</label></p>
+            <p><input type="checkbox" name="q11" id="q11_3"><label for="q11_4">В ночі</label></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label> 13. Опешить: як можна створити власну веселку</label></legend>
+            <p><textarea name="q13" id="q3" maxlength="500" spellcheck="true" rows="5" cols="60"></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label> 14. Знайдіть веселку</label></legend>
+            <p><input type="search" name="q14"></p>
+        </fieldset>
+        <fieldset>
+            <legend> <label> 15. В якому місяці най частише можна побачитити веселку?</label></legend>
+            <p><input type="month" name="q15"> </p>
+        </fieldset>
+        <fieldset>
+            <p>Тест завершено</p>
+            <meter style="width: 470px;" value="100" max="100">Кипяток</meter>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

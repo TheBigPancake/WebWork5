@@ -1,0 +1,42 @@
+h1{
+    color:rgb(203, 238, 215);  
+    text-align: center; 
+    text-shadow: black 0 0 5px; 
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(to top,  red, orange, yellow, green, #00eeff, blue, violet);
+}
+.form_body{
+    background-color: rgb(201, 201, 201);
+    border:  2px solid tomato;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width:max-content; 
+    width: 500px;
+    margin-left: 30%;
+    padding: 8px; 
+  }
+  input [list="color_veselky"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="range"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="color"]{
+    width: 450px;
+}
+input:invalid{
+    color: red;
+}
+input:valid{
+    color: seagreen;
+}
