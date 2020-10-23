@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF2E3;
+}
+
+.form_body {
+  position: relative;
+  max-width: 350px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.form_border:before {
+  background-size: 120px 120px;
+  content: "";
+  background-image: url(https://s1.iconbird.com/ico/1012/DownToEarth/w512h5121350592488Recycle22.png);
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  margin-top: -60px;
+}
+
+.form_border {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, .1);
+  padding: 0 40px 10px;
+  margin-top: 45px;
+}
+
+.form_border h2 {
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.form_content {
+  background: #FFF8F3;
+  position: relative;
+  margin: 30px -40px 0 -40px;
+  padding: 10px 40px 0 40px;
+}
+
+.form_content:before {
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  content: "";
+  height: 2px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  top: -4px;
+}
+
+.form_content h3 {
+  color: #898989;
+  font-family: 'Marck Script', cursive;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.form_content input {
+  width: 100%;
+}
+
+.form_content input, .form_content select {
+  background: #ffffff;
+  border: 1px solid #DDDDDD;
+  color: #808080;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.form_content input:focus, .form_content select:focus {
+  border-color: #C44D58;
+}
+
+.form_content input[type="submit"] {
+  background: #FF6B6B;
+  border-width: 0;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  transition: .2s linear
+}
+
+.form_content input[type="submit"]:hover {
+  background: #C44D58;
+}

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background: #f5ce62;
+}
+.Pborder {
+  background: #fffdee;
+  border: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, #C42061, #C42061 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+  color: #605756;
+  max-width: 350px;
+  margin: 50px auto 0;
+  padding: 20px;font-family: 'Playfair Display';
+}
+
+.form_block {
+  margin-bottom: 15px;
+}
+
+.form_block input[type="text"], .form_block input[type="email"], .form_block textarea {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 35px;
+  border-width: 0;
+  outline: none;
+  background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+  background-size: 8px 35px;
+  font-family: 'Playfair Display';
+}
+
+.form_block textarea {
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+}
+
+.form_block input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #F67CA5;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+
+.form_block input[type=submit]:hover {
+  background: #C42061;
+}
